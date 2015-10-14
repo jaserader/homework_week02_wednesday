@@ -183,3 +183,37 @@ footer {
        color: #fff;
      }
   }
+
+  @media(min-width: 767px) {
+
+.headerNav {
+  font-size: 25px;
+
+  a {
+    @include span-columns(2);
+    text-decoration: none;
+    color: #777777;
+
+    &:first-child {
+      @include span-columns(3);
+    }
+  }
+}
+
+.hero {
+  height: 400px;
+
+.titleTop {
+  height: 100px;
+  font-size: 80px;
+  }
+}
+.choose {
+  height: 46px;
+
+  button {
+    @include shift(5);
+    width: 115px;
+  }
+}
+}
