@@ -1,0 +1,185 @@
+@import "../bower_components/bourbon/app/assets/stylesheets/bourbon";
+@import "../bower_components/neat/app/assets/stylesheets/neat";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include outer-container;
+  font-family: sans-serif;
+}
+
+.headerNav {
+  font-size: 16px;
+  color: #5D646B;
+  background: #fff;
+  height: 40px;
+  width: 100%;
+  padding-top: 15px;
+  padding-left: 25px;
+
+  a {
+    @include span-columns(2);
+    text-decoration: none;
+    color: #777777;
+
+    &:first-child {
+      @include span-columns(3);
+    }
+  }
+}
+
+a:last-child {
+  padding-right: 0;
+}
+
+.hero {
+  height: 200px;
+  padding-top: 60px;
+  @include span-columns(12);
+  background: url(/Users/jaserader/dev/homework/week02/wednesday/images/background.jpg) no-repeat center;
+  margin-bottom: 50px;
+
+    .titleTop{
+    @include span-columns(12);
+    color: #fff;
+    font-size: 30px;
+    font-weight: normal;
+  }
+  }
+
+.section1,
+.section2,
+.section3 {
+  @include span-columns(12);
+  height: 575px;
+  border: 1px #DDDDDD solid;
+  margin-bottom: 50px;
+}
+
+.personalHeader {
+  background: #519251;
+  height: 220px;
+  color: #fff;
+  font-size: 20px;
+  padding-top: 40px;
+  font-weight: normal;
+  @include span-columns(12);
+
+  div {
+    @include span-columns(12);
+    text-align: center;
+  }
+}
+
+.smallBusinessHeader {
+  background: #2C4985;
+  height: 220px;
+  color: #fff;
+  font-size: 20px;
+  padding-top: 40px;
+  font-weight: normal;
+  @include span-columns(12);
+
+  div {
+    @include span-columns(12);
+    text-align: center;
+  }
+}
+
+.enterpriseHeader {
+  background: #111111;
+  height: 220px;
+  color: #fff;
+  font-size: 20px;
+  padding-top: 40px;
+  font-weight: normal;
+  @include span-columns(12);
+
+  div {
+    @include span-columns(12);
+    text-align: center;
+  }
+}
+
+.money {
+  font-size: 90px;
+  font-weight: lighter;
+}
+
+.perMonth {
+  opacity: .5;
+}
+
+.info {
+  @include span-columns(12);
+  height: 276px;
+
+  ul{
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+  @include span-columns(12);
+
+  li {
+    background: #F7F7F7;
+    color: #526066;
+    padding: 15px;
+    border: 1px #DDDDDD solid;
+    text-align: center;
+    height: 46px;
+  }
+}
+}
+
+.choose {
+  height: 46px;
+
+  button {
+    margin-top: 25px;
+    width: 80px;
+    @include shift(5);
+    border: 1px #DDDDDD solid;
+    border-radius: 15px;
+    background: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    height: 35px;
+  }
+}
+
+article {
+  @include span-columns(9);
+  @include shift(1);
+  margin-top: 50px;
+  margin-bottom: 25px;
+
+  h3 {
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  p {
+    color: #526066;
+    font-weight: normal;
+  }
+}
+
+footer {
+  @include span-columns(12);
+  height: 100px;
+  background: #111111;
+  color: #858585;
+  font-weight: normal;
+  padding-top: 25px;
+}
+
+  span{
+    @include span-columns(12);
+    text-align: center;
+
+     a {
+       color: #fff;
+     }
+  }
