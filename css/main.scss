@@ -184,10 +184,10 @@ footer {
      }
   }
 
-  @media(min-width: 767px) {
+  @media(min-width: 479px) {
 
 .headerNav {
-  font-size: 25px;
+  font-size: 15px;
 
   a {
     @include span-columns(2);
@@ -202,10 +202,11 @@ footer {
 
 .hero {
   height: 400px;
+  padding-top: 130px;
 
 .titleTop {
-  height: 100px;
-  font-size: 80px;
+  height: 50px;
+  font-size: 45px;
   }
 }
 .choose {
@@ -213,12 +214,12 @@ footer {
 
   button {
     @include shift(5);
-    width: 115px;
+    width: 70px;
   }
 }
 }
 
-@media(min-width: 978px) {
+@media(min-width: 768px) {
 .headerNav {
   padding-top: 8px;
   font-size: 20px;
@@ -247,11 +248,51 @@ footer {
     width: 70px;
   }
 }
+
 article {
   @include span-columns(12);
-  // @include shift(1);
-  // margin-top: 50px;
-  // margin-bottom: 25px;
+
+  div{
+    @include span-columns(5 of 12);
+    @include omega(2n);
+  }
+
+  h3 {
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  p {
+    color: #526066;
+    font-weight: normal;
+    }
+  }
+}
+
+@media(min-width: 979px) {
+body {
+  max-width: 100%;
+}
+
+// main{
+//   @include span-columns(12);
+// }
+
+.hero {
+  @include span-columns(12);
+}
+
+.section1,
+.section2,
+.section3 {
+  @include span-columns(3 of 12);
+  @include omega(3n);
+    @include shift(2);
+  margin: 15px;
+    }
+
+article {
+  @include span-columns(12);
 
   div{
     @include span-columns(5 of 12);
