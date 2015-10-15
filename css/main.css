@@ -266,3 +266,61 @@ span {
     .choose button {
       margin-left: 42.64902%;
       width: 115px; } }
+
+@media (min-width: 978px) {
+  .headerNav {
+    padding-top: 8px;
+    font-size: 20px; }
+  .hero {
+    padding-top: 130px; }
+    .hero .titleTop {
+      height: 70px;
+      font-size: 60px; }
+  .section1,
+  .section2,
+  .section3 {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 31.76157%; }
+    .section1:last-child,
+    .section2:last-child,
+    .section3:last-child {
+      margin-right: 0; }
+    .section1:nth-child(3n),
+    .section2:nth-child(3n),
+    .section3:nth-child(3n) {
+      margin-right: 0; }
+    .section1:nth-child(3n+1),
+    .section2:nth-child(3n+1),
+    .section3:nth-child(3n+1) {
+      clear: left; }
+  .choose {
+    height: 46px; }
+    .choose button {
+      margin-left: 42.64902%;
+      width: 70px; }
+  article {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 100%; }
+    article:last-child {
+      margin-right: 0; }
+    article div {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 40.29137%; }
+      article div:last-child {
+        margin-right: 0; }
+      article div:nth-child(2n) {
+        margin-right: 0; }
+      article div:nth-child(2n+1) {
+        clear: left; }
+    article h3 {
+      font-weight: normal;
+      font-size: 20px; }
+    article p {
+      color: #526066;
+      font-weight: normal; } }

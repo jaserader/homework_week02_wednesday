@@ -217,3 +217,55 @@ footer {
   }
 }
 }
+
+@media(min-width: 978px) {
+.headerNav {
+  padding-top: 8px;
+  font-size: 20px;
+}
+
+.hero{
+  padding-top: 130px;
+.titleTop {
+  height: 70px;
+  font-size: 60px;
+  }
+}
+
+.section1,
+.section2,
+.section3 {
+  @include span-columns(4 of 12);
+  @include omega(3n);
+}
+
+.choose {
+  height: 46px;
+
+  button {
+    @include shift(5);
+    width: 70px;
+  }
+}
+article {
+  @include span-columns(12);
+  // @include shift(1);
+  // margin-top: 50px;
+  // margin-bottom: 25px;
+
+  div{
+    @include span-columns(5 of 12);
+    @include omega(2n);
+  }
+
+  h3 {
+    font-weight: normal;
+    font-size: 20px;
+  }
+
+  p {
+    color: #526066;
+    font-weight: normal;
+    }
+  }
+}
